@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactFullpage from '@fullpage/react-fullpage';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Intro from './components/Intro';
+import Footer from './components/Footer';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+class App extends React.Component {
+
+  render() {
+
+    return (
+      <div className="App">
+        <ReactFullpage
+          debug /* Debug logging */
+          anchors={['intro', 'secondPage', 'thirdPage']}
+
+          render={comp => (
+            <ReactFullpage.Wrapper>
+                <Intro></Intro>
+                <Footer></Footer>
+            </ReactFullpage.Wrapper>
+          )}
+        />
+      </div>
+    );
+  }
+}
+
+const rootElement = document.getElementById('root');
+ReactDOM.render(<App />, rootElement);
