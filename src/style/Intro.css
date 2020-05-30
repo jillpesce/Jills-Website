@@ -3,5 +3,18 @@
 }
 
 #peshy {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+}
+
+#penn {
+    color: #990000;
+    font-family: 'ITC STONE SERIF';  
+}
+
+.first-letter {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: .3rem;
 }

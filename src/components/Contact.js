@@ -1,20 +1,22 @@
 import React from 'react';
+
+import '../style/Contact.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
-
-export default class Footer extends React.Component {
+export default class Contact extends React.Component {
     render() {
         return (
-            <div className="section">
+            <div className="section" data-tooltip="Contact" data-anchor="Contact">
                 <p>Website and Design by</p>
                 <br />
-                <span class="is-size-3" style={{fontFamily:'dancing script'}}> • Jill Pesce • </span>
-                <br />
-                <p>2020</p>
+                <p class="script"> • Jill Pesce • </p>
+                <p class="script small">2020</p>
                 <br />
                 <p> Share your thoughts, feelings, and/or aspirations with me below.</p>
+                <p class="small">P.S. I like coffee</p>
                 <br />
                 <a target="_blank" href="https://www.linkedin.com/in/jillian-pesce"><FontAwesomeIcon icon={faLinkedin}/></a>
                 <a style={{marginRight:'10px', marginLeft: '10px'}} href="mailto:jillpesce44@gmail.com"><FontAwesomeIcon icon={faEnvelopeSquare}/></a>

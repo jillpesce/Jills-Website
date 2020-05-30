@@ -2,10 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 
+import Contact from './components/Contact';
+import Design from './components/Design';
 import Intro from './components/Intro';
-import Footer from './components/Footer';
+import Involvement from './components/Involvement';
+import NavBar from './components/NavBar';
+import Projects from './components/Projects';
+
+import './style/App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from 'react-bootstrap/Nav';
+
 
 class App extends React.Component {
 
@@ -14,13 +22,23 @@ class App extends React.Component {
     return (
       <div className="App">
         <ReactFullpage
-          debug /* Debug logging */
-          anchors={['intro', 'secondPage', 'thirdPage']}
+
+          menu='#menu'
+          navigation={true}
+          navigationPosition='right'
+          showActiveTooltip={false}
+
+          slidesNavigation={true}
+          slidesNavPosition='bottom'
 
           render={comp => (
             <ReactFullpage.Wrapper>
-                <Intro></Intro>
-                <Footer></Footer>
+              <NavBar></NavBar>
+              <Intro></Intro>
+              <Projects></Projects>
+              <Involvement></Involvement>
+              <Design></Design>
+              <Contact></Contact>
             </ReactFullpage.Wrapper>
           )}
         />
