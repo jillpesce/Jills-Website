@@ -6,13 +6,12 @@ import Contact from './components/Contact';
 import Design from './components/Design';
 import Intro from './components/Intro';
 import Involvement from './components/Involvement';
-import NavBar from './components/NavBar';
+import DarkMode from './components/DarkMode';
 import Projects from './components/Projects';
 
 import './style/App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from 'react-bootstrap/Nav';
 
 
 class App extends React.Component {
@@ -21,6 +20,28 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <div class="nav-bar">
+          <ul id="menu">
+            <li data-menuanchor="Intro">
+              <a href="#Intro">Intro</a>
+            </li>
+            <li data-menuanchor="Projects">
+              <a href="#Projects">Projects</a>
+            </li>
+            <li data-menuanchor="Involvements">
+              <a href="#Involvement">Involvement</a>
+            </li>
+            <li data-menuanchor="Design">
+              <a href="#Design">Design</a>
+            </li>
+            <li data-menuanchor="Contact">
+              <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+
+          <DarkMode></DarkMode>
+        </div>
+
         <ReactFullpage
 
           menu='#menu'
@@ -33,7 +54,6 @@ class App extends React.Component {
 
           render={comp => (
             <ReactFullpage.Wrapper>
-              <NavBar></NavBar>
               <Intro></Intro>
               <Projects></Projects>
               <Involvement></Involvement>

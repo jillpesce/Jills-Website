@@ -11,14 +11,16 @@ body {
 
 * {
   text-align: center;
-  font-size: 1.5rem;
+}
+
+p span {
+  font-size: 25pt;
 }
 
 .code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
   color: green;
-  font-size: 1.3rem;
 }
 
 .markdown {
@@ -33,12 +35,12 @@ body {
 }
 
 .big {
-	font-size: 6rem;
+	font-size: 100pt;
   margin-bottom: 0;
 }
 
 .small {
-  font-size: .8rem !important;
+  font-size: 15pt !important;
 }
 
 .script {
@@ -47,4 +49,57 @@ body {
 
 #fp-nav ul li .fp-tooltip {
   color: black;
+}
+
+a {
+  color: lightslategray !important;
+}
+
+#menu {
+  position: relative;
+  z-index: 70;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  display: inline-block;
+  float: right;
+}
+
+li {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  font-size: 15pt;
+}
+
+.nav-bar {
+  position:fixed;
+  width: 90%;
+  margin: 30px;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.toggle {
+  display: inline-block;
+  float: left;
+}
+
+#menu li {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1a1919;
+  color: #999;
 }

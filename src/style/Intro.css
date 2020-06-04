@@ -12,9 +12,14 @@
 }
 
 .first-letter {
-    font-size: 2rem;
+    font-size: 33pt;
 }
 
 p {
     margin-bottom: .3rem;
+    font-size: 25pt;
+}
+
+img {
+    height: 50pt;
 }
