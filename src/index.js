@@ -1,4 +1,4 @@
-import React from 'react';
+import React,  { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 
@@ -47,6 +47,7 @@ class App extends React.Component {
           menu='#menu'
           navigation={true}
           navigationPosition='right'
+          navigationTooltips={[]}
           showActiveTooltip={false}
 
           slidesNavigation={true}

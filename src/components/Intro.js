@@ -3,10 +3,19 @@ import Typist from 'react-typist';
 
 import '../style/Intro.css';
 
+setTimeout(
+    function() {
+        document.getElementById("arrow").style.visibility = "visible";
+    }
+    .bind(this),
+    16000
+);
+
 export default class Intro extends React.Component {
+
     render() {
         return (
-            <div className="section" data-tooltip="Intro" data-anchor="Intro">
+            <div className="section" data-anchor="Intro">
                 <Typist cursor={{ show: false }}>
                     <p>Hey there, my name is</p>
                     <Typist.Delay ms={300} />
@@ -24,8 +33,8 @@ export default class Intro extends React.Component {
                     <p id="penn"> <span class="first-letter">U</span>NIVERSITY <em>of</em> <span class="first-letter">P</span>ENNSYLVANIA. </p>
                     <Typist.Delay ms={500} />
                     <p>Come see what I've been up to!</p>
-                    <img src='../../arrows.png'></img>
                 </Typist>
+                <a href="#Projects"><img id="arrow" src='../../arrows.png'></img></a>
                 
             </div>
         );
