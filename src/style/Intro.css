@@ -12,15 +12,14 @@
 }
 
 .first-letter {
-    font-size: 33pt;
+    font-size: 2.5rem;
 }
 
 p {
     margin-bottom: .3rem;
-    font-size: 25pt;
 }
 
 #arrow {
-    height: 50pt;
+    height: 5rem;
     visibility: hidden;
 }

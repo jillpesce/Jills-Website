@@ -21,6 +21,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div class="nav-bar">
+        <DarkMode></DarkMode>
           <ul id="menu">
             <li data-menuanchor="Intro">
               <a href="#Intro">Intro</a>
@@ -38,8 +39,6 @@ class App extends React.Component {
               <a href="#Contact">Contact</a>
             </li>
           </ul>
-
-          <DarkMode></DarkMode>
         </div>
 
         <ReactFullpage
@@ -52,6 +51,8 @@ class App extends React.Component {
 
           slidesNavigation={true}
           slidesNavPosition='bottom'
+
+          paddingTop= '4em'
 
           render={comp => (
             <ReactFullpage.Wrapper>

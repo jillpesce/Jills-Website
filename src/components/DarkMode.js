@@ -12,7 +12,7 @@ const DarkMode = () => {
             <DarkModeToggle 
                 checked={darkMode.value} 
                 onChange={darkMode.toggle}
-                size={80}
+                size={'10rem'}
             />
         </div>
     );
