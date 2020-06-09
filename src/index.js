@@ -1,4 +1,4 @@
-import React,  { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 
@@ -13,15 +13,17 @@ import './style/App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 class App extends React.Component {
-
+  constructor(props) {
+    super(props);
+    this.state = {dark: true};
+  }
   render() {
 
     return (
       <div className="App">
         <div class="nav-bar">
-        <DarkMode></DarkMode>
+          <DarkMode mode="this.state.dark"></DarkMode>
           <ul id="menu">
             <li data-menuanchor="Intro">
               <a href="#Intro">Intro</a>
@@ -29,7 +31,7 @@ class App extends React.Component {
             <li data-menuanchor="Projects">
               <a href="#Projects">Projects</a>
             </li>
-            <li data-menuanchor="Involvements">
+            <li data-menuanchor="Involvement">
               <a href="#Involvement">Involvement</a>
             </li>
             <li data-menuanchor="Design">
@@ -52,12 +54,12 @@ class App extends React.Component {
           slidesNavigation={true}
           slidesNavPosition='bottom'
 
-          paddingTop= '4em'
+          paddingTop='4em'
 
           render={comp => (
             <ReactFullpage.Wrapper>
               <Intro></Intro>
-              <Projects></Projects>
+              <Projects mode="this.state.dark"></Projects>
               <Involvement></Involvement>
               <Design></Design>
               <Contact></Contact>
