@@ -1,7 +1,5 @@
 import React from 'react';
 
-import '../style/Projects.css';
-
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -34,11 +32,10 @@ export default class Projects extends React.Component {
                     <Card.Body>
                         <Card.Title style={{ fontSize: '2rem' }}>Campus Tutoring App &amp; Website</Card.Title>
                         <Card.Text style={{ fontSize: '1.5rem' }}>
-                        Created a tutoring product that allows flexible appointment booking
-                        progress tracking/visualization.
+                        Created a tutoring product that allows flexible appointment booking, 
+                        progress tracking, and tutor rating.
                             </Card.Text>
-                        <a target="_blank" href="https://github.com/jillpesce/350S20-20"><FontAwesomeIcon class="icon" icon={faGithubSquare} /></a>
-                        {/* <Button target="_blank" variant="outline-dark" href="https://youtu.be/ORF9CNXA-vo">Demo</Button> */}
+                        <a target="_blank" href="https://github.com/jillpesce/Tutoring-App"><FontAwesomeIcon class="icon" icon={faGithubSquare} /></a>
                     </Card.Body>
                 </Card></div>
             <div class="slide" data-anchor="Stencil">
