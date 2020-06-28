@@ -14,10 +14,10 @@ export default class Contact extends React.Component {
             <div className="section" data-anchor="Contact">
                 <p>Website &amp; Design by</p>
                 <br />
-                <p class="script"> • Jill Pesce • </p>
-                <p class="script small">2020</p>
+                <p class="script medium"> • Jill Pesce • </p>
+                <p class="script">2020</p>
                 <br />
-                <p> Share your thoughts, feelings, and/or aspirations with me below.</p>
+                <p> Share your thoughts, questions, or favorite books with me below.</p>
                 <p class="small">P.S. I like coffee</p>
                 <br />
                 <OverlayTrigger
