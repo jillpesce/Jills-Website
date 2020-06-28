@@ -3,8 +3,12 @@ import useDarkMode from 'use-dark-mode';
 
 import DarkModeToggle from "react-dark-mode-toggle";
 
-const DarkMode = () => {
+
+const DarkMode = (props) => {
+
     const darkMode = useDarkMode(false);
+    props.onToggle();
+
     return (
         <div class="toggle">
             <DarkModeToggle 

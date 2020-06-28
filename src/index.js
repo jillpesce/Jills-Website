@@ -13,17 +13,30 @@ import './style/App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 class App extends React.Component {
+
   constructor(props) {
     super(props);
-    this.state = {dark: true};
+    this.state = { dark: false };
+    this.onToggle = this.onToggle.bind(this)
+    // let inv = new Involvement();
+    // inv.update(props);
   }
+
+
+
+  onToggle() {
+    this.state.dark = (this.state.dark ? false : true);
+    console.log(this.state.dark);
+  }
+
   render() {
 
     return (
       <div className="App">
         <div class="nav-bar">
-          <DarkMode mode="this.state.dark"></DarkMode>
+          <DarkMode mode={!this.state.dark} onToggle={this.onToggle}></DarkMode>
           <ul id="menu">
             <li data-menuanchor="Intro">
               <a href="#Intro">Intro</a>
@@ -59,8 +72,8 @@ class App extends React.Component {
           render={comp => (
             <ReactFullpage.Wrapper>
               <Intro></Intro>
-              <Projects mode="this.state.dark"></Projects>
-              <Involvement></Involvement>
+              <Projects dark={this.state.dark}></Projects>
+              <Involvement dark={this.state.dark}></Involvement>
               <Design></Design>
               <Contact></Contact>
             </ReactFullpage.Wrapper>

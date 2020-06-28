@@ -8,8 +8,7 @@ export default class Design extends React.Component {
         return (
             <div className="section" data-anchor="Design">
                 <div class="slide" data-anchor="sound">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="top" src="./img/artboard.jpg" class="card-img" style={{ height: '25rem' }} />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Sound Abstraction</Card.Title>
@@ -19,8 +18,7 @@ export default class Design extends React.Component {
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="city">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="top" src="./img/artboard2.jpg" class="card-img" style={{ height: '25rem' }} />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>City Abstraction</Card.Title>
@@ -31,8 +29,7 @@ export default class Design extends React.Component {
                     </Card></div>
 
                 <div class="slide" data-anchor="animation">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="top" src="./img/birds.png" class="card-img" style={{ height: '23rem' }} />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Poem Abstraction</Card.Title>
@@ -43,8 +40,7 @@ export default class Design extends React.Component {
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="landmarks">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="top" src="./img/landmarks.png" class="card-img" style={{ height: '20.5rem' }}/>
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Personal Landmarks</Card.Title>

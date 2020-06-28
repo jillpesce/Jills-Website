@@ -3,28 +3,45 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
+
+
+
 export default class Involvement extends React.Component {
+    // update(props) {
+    //     setTimeout(
+    //         function () {
+    //             console.log(props.dark);
+    //             this.forceUpdate();
+    //             this.update(props);
+    //         }
+    //             .bind(this),
+    //         1000
+    //     );
+        
+    // }
+    // componentDidMount() {
+    //     console.log("@@@" + this.props.dark);
+    // }
     render() {
+        console.log("@@@" + this.props.dark);
         return (
             <div className="section" data-anchor="Involvement">
                 <div class="slide" data-anchor="%project">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="top" src="./img/percproj.png" class="wide" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>The Percentage Project - <em>Outreach Head</em></Card.Title>
                             <Card.Text style={{ fontSize: '1.5rem' }}>
-                                Leader of outreach of a non-profit aiming to encourage reflection upon the situations of minorities in Computer Science Departments.
+                                Lead outreach of a non-profit aiming to encourage reflection upon the situations of minorities in Computer Science Departments.
                             </Card.Text>
                             <Button target="_blank" variant="outline-dark" href="https://percentageproject.com/#/">Check it out</Button>
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="TA">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="bottom" src="./img/ta.png" class="card-img" />
                         <Card.Body>
-                            <Card.Title style={{ fontSize: '2rem' }}>Intro to Computer Science - <em>Teaching Assistant</em></Card.Title>
+                            <Card.Title style={{ fontSize: '2rem' }}>{this.props.dark}Intro to Computer Science - <em>Teaching Assistant</em></Card.Title>
                             <Card.Text style={{ fontSize: '1.5rem' }}>
                                 Teach the basics of Java through weekly recitation classes, helping students in office
                                 hours, and providing constructive feedback on assignments/tests.
@@ -33,8 +50,7 @@ export default class Involvement extends React.Component {
                         </Card.Body>
                     </Card> </div>
                 <div class="slide" data-anchor="Advocacy">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="bottom" src="https://wics.cis.upenn.edu/logo/wics.png" class="card-img" style={{ height: '18rem' }} />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>WiCS Director of Advocacy</Card.Title>
@@ -44,15 +60,13 @@ export default class Involvement extends React.Component {
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="XO">
-                    <Card class="card" text={this.props.dark === 'dark' ? 'white' : 'dark'}
-                        bg={this.props.dark === 'dark' ? 'dark' : 'white'}>
+                    <Card class="card">
                         <Card.Img variant="bottom" src="https://indianapublicmedia.org/news/news-images/15541304_10154286876852857_411365421062585413_n.png" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Chi Omega Fraternity</Card.Title>
                             <Card.Text style={{ fontSize: '1.5rem' }}>
                                 Member of the Beta Alpha chapter of a national women’s organization committed to philanthropy in support of the Make-A-Wish Foundation.
                             </Card.Text>
-                            {/* <Button target="_blank" variant="outline-dark" href="">Check it out</Button> */}
                         </Card.Body>
                     </Card> </div>
             </div >

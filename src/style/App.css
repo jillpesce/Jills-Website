@@ -121,12 +121,17 @@ body.dark-mode #fp-nav ul li a span, body.dark-mode .fp-slidesNav ul li a span {
 .card {
    width: 60%; 
    height: 70%;
+   box-shadow: 0 0 10px grey;
 }
 
 .card-img {
   width: auto !important;
   height: 20rem;
   align-self: center;
+}
+
+.bg-white {
+  background-color: gray !important;
 }
 
 .wide {
