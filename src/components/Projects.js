@@ -11,7 +11,7 @@ export default class Projects extends React.Component {
             <div className="section" data-anchor="Projects">
 
                 <div class="slide" data-anchor="Rona">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="top" src="./img/rona.png" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Coronavirus Database Web App</Card.Title>
@@ -25,7 +25,7 @@ export default class Projects extends React.Component {
                     </Card></div>
 
                 <div class="slide" data-anchor="Tutor">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="top" src="./img/tutor.png" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Campus Tutoring App &amp; Website</Card.Title>
@@ -37,7 +37,7 @@ export default class Projects extends React.Component {
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="Stencil">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="top" src="https://mma.prnewswire.com/media/996576/Softheon_Logo.jpg?p=facebook" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Softheon Stencil</Card.Title>
@@ -49,7 +49,7 @@ export default class Projects extends React.Component {
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="Kettle">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="top" src="./img/tea.png" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>IO(Tea) Kettle</Card.Title>

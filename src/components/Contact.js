@@ -12,14 +12,8 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div className="section" data-anchor="Contact">
-                <p>Website &amp; Design by</p>
-                <br />
-                <p class="script medium"> • Jill Pesce • </p>
-                <p class="script">2020</p>
-                <br />
                 <p> Share your thoughts, questions, or favorite books with me below.</p>
                 <p class="small">P.S. I like coffee</p>
-                <br />
                 <OverlayTrigger
                     placement={'bottom'}
                     overlay={
@@ -60,9 +54,16 @@ export default class Contact extends React.Component {
                 >
                     <a download="Jill_Pesce_Resume" href='../../files/Resume.pdf'><FontAwesomeIcon class="icon" icon={faFileDownload} /></a>
                 </OverlayTrigger>
+                <br/>
+                <br/>
+                <p class="small">Website &amp; Design by</p>
+                <p class="script"> • Jill Pesce • </p>
+                <p class="script small">2020</p>
             </div>
         );
+        
     }
+    
 }
 
 

@@ -27,7 +27,7 @@ export default class Involvement extends React.Component {
         return (
             <div className="section" data-anchor="Involvement">
                 <div class="slide" data-anchor="%project">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="top" src="./img/percproj.png" class="wide" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>The Percentage Project - <em>Outreach Head</em></Card.Title>
@@ -38,7 +38,7 @@ export default class Involvement extends React.Component {
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="TA">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="bottom" src="./img/ta.png" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>{this.props.dark}Intro to Computer Science - <em>Teaching Assistant</em></Card.Title>
@@ -50,7 +50,7 @@ export default class Involvement extends React.Component {
                         </Card.Body>
                     </Card> </div>
                 <div class="slide" data-anchor="Advocacy">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="bottom" src="https://wics.cis.upenn.edu/logo/wics.png" class="card-img" style={{ height: '18rem' }} />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>WiCS Director of Advocacy</Card.Title>
@@ -60,7 +60,7 @@ export default class Involvement extends React.Component {
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="XO">
-                    <Card class="card">
+                    <Card class="card" text="dark">
                         <Card.Img variant="bottom" src="https://indianapublicmedia.org/news/news-images/15541304_10154286876852857_411365421062585413_n.png" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Chi Omega Fraternity</Card.Title>
