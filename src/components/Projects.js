@@ -50,7 +50,7 @@ export default class Projects extends React.Component {
                     </Card></div>
                 <div class="slide" data-anchor="Kettle">
                     <Card class="card" text="dark">
-                        <Card.Img variant="top" src="./img/tea.png" class="card-img" />
+                        <Card.Img variant="top" src="./img/arduino2.png" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>IO(Tea) Kettle</Card.Title>
                             <Card.Text style={{ fontSize: '1.5rem' }}>
