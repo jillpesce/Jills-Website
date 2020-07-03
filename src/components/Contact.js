@@ -56,6 +56,8 @@ export default class Contact extends React.Component {
                 </OverlayTrigger>
                 <br/>
                 <br/>
+                <img class="coffee" src='./img/coffee.png'></img>
+                <img class="grass" src='./img/grass.png'></img>
                 <p class="small">Website &amp; Design by</p>
                 <p class="script"> • Jill Pesce • </p>
                 <p class="script small">2020</p>

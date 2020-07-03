@@ -124,6 +124,7 @@ h1 {
   position: absolute; 
   left: 20rem;
   top: 10rem;
+  text-shadow: 2px 2px grey;
 }
 
 .card {
@@ -158,6 +159,7 @@ h1 {
   position: absolute;
   left: 9rem;
   top: 12rem;
+  box-shadow: 0 0 10px grey;
 }
 
 .circular--landscape2 {
@@ -168,6 +170,7 @@ h1 {
   position: absolute;
   right: 9rem;
   top: 12rem;
+  box-shadow: 0 0 10px grey;
 }
 
 .avatar {
