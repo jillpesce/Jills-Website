@@ -7,25 +7,10 @@ import Button from 'react-bootstrap/Button';
 
 
 export default class Involvement extends React.Component {
-    // update(props) {
-    //     setTimeout(
-    //         function () {
-    //             console.log(props.dark);
-    //             this.forceUpdate();
-    //             this.update(props);
-    //         }
-    //             .bind(this),
-    //         1000
-    //     );
-        
-    // }
-    // componentDidMount() {
-    //     console.log("@@@" + this.props.dark);
-    // }
     render() {
-        console.log("@@@" + this.props.dark);
         return (
             <div className="section" data-anchor="Involvement">
+                <h1> INVOLVEMENT </h1>
                 <div class="slide" data-anchor="%project">
                     <Card class="card" text="dark">
                         <Card.Img variant="top" src="./img/percproj.png" class="wide" />

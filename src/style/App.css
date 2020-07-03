@@ -118,10 +118,20 @@ body.dark-mode #fp-nav ul li a span, body.dark-mode .fp-slidesNav ul li a span {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 3.5rem !important; 
+  font-weight: 600 !important;
+  position: absolute; 
+  left: 20rem;
+  top: 10rem;
+}
+
 .card {
    width: 60%; 
    height: 70%;
    box-shadow: 0 0 10px grey;
+   margin-bottom: 5rem;
+   margin-top: 0;
 }
 
 .card-img {

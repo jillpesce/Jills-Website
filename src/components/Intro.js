@@ -28,11 +28,9 @@ export default class Intro extends React.Component {
                         <img class="avatar" src='./img/jump.jpg' alt="Avatar"></img>
                     </div>
                 </div>
-                <Typist.Delay ms={1000} />
-                {/* <p id="peshy" class="small">(pronounced "peshy")</p>
-                    <Typist.Delay ms={500} /> */}
+                <Typist.Delay ms={2000} />
                 <p>I'm a writer, student
-                <Typist.Backspace count={7} delay={600} />
+                <Typist.Backspace count={7} delay={1000} />
                     <span class="code">computer scientist</span>
                     , and explorer </p>
                 <Typist.Delay ms={500} />

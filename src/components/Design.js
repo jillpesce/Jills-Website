@@ -7,6 +7,7 @@ export default class Design extends React.Component {
     render() {
         return (
             <div className="section" data-anchor="Design">
+                <h1> DESIGN </h1>
                 <div class="slide" data-anchor="sound">
                     <Card class="card" text="dark">
                         <Card.Img variant="top" src="./img/artboard.jpg" class="card-img" style={{ height: '25rem' }} />
@@ -41,7 +42,7 @@ export default class Design extends React.Component {
                     </Card></div>
                 <div class="slide" data-anchor="landmarks">
                     <Card class="card" text="dark">
-                        <Card.Img variant="top" src="./img/landmarks.png" class="card-img" style={{ height: '20.5rem' }}/>
+                        <Card.Img variant="top" src="./img/landmarks.png" class="card-img" style={{ height: '20.5rem' }} />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Personal Landmarks</Card.Title>
                             <Card.Text style={{ fontSize: '1.5rem' }}>
