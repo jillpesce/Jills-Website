@@ -26,7 +26,7 @@
     filter: drop-shadow(0px 0px 5px grey);
 }
 
-.grass:hover, .coffee:hover {
+/* .grass:hover, .coffee:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-  }
+  } */
