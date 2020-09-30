@@ -36,13 +36,24 @@ export default class Projects extends React.Component {
                             <a target="_blank" href="https://github.com/jillpesce/Tutoring-App"><FontAwesomeIcon class="icon" icon={faGithubSquare} /></a>
                         </Card.Body>
                     </Card></div>
+                <div class="slide" data-anchor="BlackRock">
+                    <Card class="card" text="dark">
+                        <Card.Img variant="top" src="https://d1qq9lwf5ow8iz.cloudfront.net/live-images-1/ImageDetail_4b2ac4a9-c771-4ac3-806c-0d19eb034bea" class="card-img" />
+                        <Card.Body>
+                            <Card.Title style={{ fontSize: '2rem' }}>BlackRock Comparison Tool</Card.Title>
+                            <Card.Text style={{ fontSize: '1.5rem' }}>
+                                Created a portfolio valuation comparison tool using Merkle Trees for the BlackRock Aladdin Accounting Team.
+                            </Card.Text>
+                            <Button target="_blank" variant="outline-dark" href="https://www.blackrock.com/aladdin">Check out Aladdin</Button>
+                        </Card.Body>
+                    </Card></div>
                 <div class="slide" data-anchor="Stencil">
                     <Card class="card" text="dark">
                         <Card.Img variant="top" src="https://mma.prnewswire.com/media/996576/Softheon_Logo.jpg?p=facebook" class="card-img" />
                         <Card.Body>
                             <Card.Title style={{ fontSize: '2rem' }}>Softheon Stencil</Card.Title>
                             <Card.Text style={{ fontSize: '1.5rem' }}>
-                                Created an internal portal for Softheon that allows product managers to drag and drop components to create customized invoices,
+                                Created an internal portal that allows product managers to drag and drop components to create customized invoices,
                                 reports, and documents to send to clients.
                             </Card.Text>
                             <Button target="_blank" variant="outline-dark" href="https://www.softheon.com/">Check out Softheon</Button>

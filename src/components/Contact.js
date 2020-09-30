@@ -12,7 +12,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div className="section" data-anchor="Contact">
-                <p> Share your thoughts, questions, or favorite books with me below.</p>
+                <p> Share your thoughts, questions, or favorite movies with me below.</p>
                 <p class="small">P.S. I like coffee</p>
                 <OverlayTrigger
                     placement={'bottom'}

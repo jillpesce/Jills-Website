@@ -41,7 +41,7 @@ export default class Involvement extends React.Component {
                             <Card.Title style={{ fontSize: '2rem' }}>WiCS Director of Advocacy</Card.Title>
                             <Card.Text style={{ fontSize: '1.5rem' }}>
                                 Leader of advocacy in an organization to support and promote women in computer science by encouraging discussion and raising awareness regarding issues surrounding women in tech.                            </Card.Text>
-                            <Button target="_blank" variant="outline-dark" href="https://wics.cis.upenn.edu/">Check it out</Button>
+                            <Button target="_blank" variant="outline-dark" href="https://wics.cis.upenn.edu/program.html">Check it out</Button>
                         </Card.Body>
                     </Card></div>
                 <div class="slide" data-anchor="XO">
